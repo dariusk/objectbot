@@ -8,15 +8,11 @@ _Note: you must be comfortable using your computer's command line interface to u
 
 If you don't already have have them, please install [Node.js](http://nodejs.org/). This will install two programs: `node`, which runs JavaScript from the command line, and `npm`, which helps you install software that Node.js can run.
 
-Make an empty project directory somewhere convenient for you, [download this file](https://github.com/dariusk/examplebot/archive/master.zip), and unzip the contents to your project directory. Go to your project directory in the command line. There should be four files there: `.gitignore`, `README.md`, `bot.js`In that directory type:
+Make an empty project directory somewhere convenient for you, [download this file](https://github.com/dariusk/examplebot/archive/master.zip), and unzip the contents to your project directory. Go to your project directory in the command line. There should be six files there: `nouns.js`, `.gitignore`, `README.md`, `bot.js`, `config.js`, and `package.json`. In that directory type:
 
-`npm install request`
+`npm install`
 
-...and when that's done:
-
-`npm install twit`
-
-This installs some code to the `npm_modules` subdirectory, which you don't need to worry about.
+This installs some code to the `node_modules` subdirectory, which you don't need to worry about.
 
 ##Connecting to Twitter
 
