@@ -1,7 +1,5 @@
 // Our Twitter library
 var Twit = require('twit');
-// A library that lets us grab data from the web via HTTP
-var request = require('request');
 // Nouns!
 var nouns = require('./nouns.js');
 // A library that lets us pluralize
@@ -19,7 +17,16 @@ Array.prototype.pick = function() {
 
 // This function finds the latest tweet with the #mediaarts hashtag, and retweets it.
 function tweet() {
-    console.log(stuff());
+    var tweetText = stuff();
+      console.log(tweetText);
+//    T.post('statuses/update', {status: tweetText }, function(err, reply) {
+//      if (err !== null) {
+//        console.log('There was an error:', err);
+//      }
+//      else {
+//        console.log('We tweeted:', tweetText);
+//      }
+//    });
 }
 
 function stuff() {
